@@ -66,15 +66,6 @@
     </div>
 
     <script>
-        //        validation
-        
-        function validation() {
-            var nome2 = document.getElementById("t1").value;
-            
-            if {}
-            
-        }
-        
         
         //        registration
 
@@ -114,23 +105,31 @@
                 alert('Le password non coincidono!');
             } else if (document.getElementById("t5").value.length < 10) {
                 alert('la password deve contenere almeno 10 caratteri');
-            } else if (pass == nome) {
-                alert('La password non può contenere il nome!');
-            } else if (document.getElementById("t4").value.length < 10) {
+            } 
+            
+//            else if (pass == nome) {
+//                alert('La password non può contenere il nome!');
+//            } 
+            
+            else if (document.getElementById("t4").value.length < 10) {
                 alert('Lindirizzo deve contenere almeno 10 caratteri');
-            } else {
+            } 
+            
+            else {
                 alert('Grazie per esserti registrato!');
 
                 window.location = "pagina.html";
             }
         }
-        //        force typing pass
+        
+        
+//                force typing pass
 
-//        const pasteBox = document.getElementById("t5");
-//        pasteBox.onpaste = e => {
-//            e.preventDefault();
-//            return false;
-//        };
+        const pasteBox = document.getElementById("t5");
+        pasteBox.onpaste = e => {
+            e.preventDefault();
+            return false;
+        };
 
     </script>
 
